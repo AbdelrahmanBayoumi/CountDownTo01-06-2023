@@ -1,0 +1,150 @@
+/* @import url("https://fonts.googleapis.com/earlyaccess/droidarabickufi.css?display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Changa", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/bg.jpg");
+  color: black;
+  height: 100vh;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 0px;
+  margin: 0px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+header h1 {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+header img {
+  max-height: 50px;
+}
+main {
+  width: 100%;
+  height: 80%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+main .box {
+  width: 80%;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+main .box h2 {
+  background-color: #4f4f4f;
+  color: #fff;
+  padding: 10px;
+  margin: 0px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.title-box {
+  margin: 0px;
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
+
+  border: 3px solid #222;
+
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 3px;
+  border-left-width: 0px;
+}
+
+.title-box .title {
+  padding: 10px;
+  background-color: #666666;
+  color: #fff;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.title-box .value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.title-box.last {
+  border: none;
+}
+
+.title-box.last .title {
+  border-radius: 0px 0px 20px 0px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+footer a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 680px) {
+  .title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  .title-box .value,
+  .title-box .title {
+    width: 100%;
+  }
+  .title-box.last .title {
+    border-radius: 0px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    justify-content: center;
+  }
+}
